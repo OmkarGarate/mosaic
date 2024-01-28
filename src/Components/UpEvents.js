@@ -17,7 +17,7 @@ function UpEvents() {
     const events = [];
     for (var i = 0; i < 20; i++) {
     events.push({
-        name: "Previous event" + (i + 1),
+        name: "Upcoming event" + (i + 1),
         img : images[k]
     });
     if(k===7)
