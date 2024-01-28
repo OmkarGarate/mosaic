@@ -123,7 +123,6 @@ function LiveEvents() {
             </div>
           ))}
 
-         
         </div>
       </div>
       <div className="ELbtns">

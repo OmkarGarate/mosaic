@@ -184,7 +184,7 @@
     translate: -25px -30px;
 }
 
-.sltad{
+.siDesc .sltad{
     padding: 10px 20px;
     font-size: 0.7rem;
     font-weight: bold;
@@ -276,7 +276,7 @@
 .elWindow{
     overflow: hidden;
     /* border: 1px solid black; */
-    width: 93%;
+    width: 970px;
     margin: auto;
 }
 
