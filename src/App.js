@@ -18,11 +18,9 @@ function App() {
 
 <Lae/>
     <Routes>
-    
-    
       <Route path="/" element={<EventListing/>}>
         <Route path="prevEvents" element={<PrevEvents/>} />
-        <Route path="liveEvents" element={<LiveEvents/>} />
+        <Route path="/" element={<LiveEvents/>} />
         <Route path="upEvents" element={<UpEvents/>} />
       </Route>
     </Routes>
