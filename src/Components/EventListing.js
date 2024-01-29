@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
-import PrevEvents from './PrevEvents';
-import { Link, Outlet } from 'react-router-dom';
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 function EventListing() {
-  const [activeTab, setActiveTab] = useState('pe'); // 'pe' for Previous Events, 'le' for Live Events, 'ue' for Upcoming Events
-
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
-  };
 
   return (
     <div className='eventListing'>

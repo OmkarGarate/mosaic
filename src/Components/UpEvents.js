@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import img1 from "../Images/Image1.jpg";
 import img2 from "../Images/Image2.jpg";
 import img3 from "../Images/Image3.jpg";

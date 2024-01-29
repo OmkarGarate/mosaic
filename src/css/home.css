@@ -208,7 +208,6 @@
         background-image: linear-gradient(145deg, #ff3600, 70%, #ffc52b);
 }
 
-
 .sld{
     font-size: 1.5rem;
     font-weight: 500;
@@ -222,6 +221,7 @@
 /* Event Listing */
 .eventListing{
     background-color: #f7f7f7;
+    padding: 50px 0;
 }
 
 .elInner{
@@ -409,4 +409,100 @@
     color: #ffc52b;
 }
 
+/* Gallery */
+.photoGallery{
+    height: max-content;
+    padding: 50px 0;
+}
 
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+.item6{
+    grid-area: item6;
+}
+.item7{
+    grid-area: item7;
+}
+.item8{
+    grid-area: item8;
+}
+
+.rowIndex{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-areas: 'item1 item2 item2 item3'
+                        'item1 item4 item5 item5'
+                        'item6 item6 item7 item8';
+    grid-template-columns: repeat(4, minmax(345px, 1fr)); /* Set the width of each column to 100px */
+   grid-template-rows: repeat(3, 250px);
+}
+
+.evePhotos{
+    /* border: 1px solid black; */
+    cursor: pointer;
+}
+
+.evePhotos img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.vag{
+    padding: 10px 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background-image: linear-gradient(145deg, #ff3600, 70%, #ffc52b);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 5px 15px 0px gray;
+    cursor: pointer;
+}
+
+.photoGallery a{
+    margin-top: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.backBtn{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    z-index: 1;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border: none;
+    box-shadow: 0px 5px 5px 0px gray;
+    cursor: pointer;
+    transition:  0.3s ease-in-out;
+    transform: translateY(0);
+}
+
+.backBtn:hover{
+    background-color: #ff4e00;
+    box-shadow: 0px 5px 10px 0px #ff9e75;
+    transform: translateY(-3px);
+}
+
+.backBtn img{
+    width: 20px;
+}
