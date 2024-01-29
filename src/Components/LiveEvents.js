@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import img1 from "../Images/Image1.jpg";
 import img2 from "../Images/Image2.jpg";
 import img3 from "../Images/Image3.jpg";
@@ -13,8 +13,6 @@ import location from "../Images/location(white).png";
 
 function LiveEvents() {
   const images = [img1, img2, img3, img4, img5, img6, img7, img8];
-
-  
 
   const [slide, setSlide] = useState({
     transform: "translateX(0px)",

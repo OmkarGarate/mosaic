@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import img1 from "../Images/Image1.jpg";
 import img2 from "../Images/Image2.jpg";
 import img3 from "../Images/Image3.jpg";
@@ -16,16 +16,16 @@ function PrevEvents() {
     var k =1;
     const events = [];
     for (var i = 0; i < 20; i++) {
-    events.push({
-        name: "Previous event" + (i + 1),
-        img : images[k]
-    });
-    if(k===7)
-    {
-        k=0;
-    }else{
-        k++;
-    }
+      events.push({
+          name: "Previous event" + (i + 1),
+          img : images[k]
+      });
+      if(k===7)
+      {
+          k=0;
+      }else{
+          k++;
+      }
     }
 
     const [slide, setSlide] = useState({
