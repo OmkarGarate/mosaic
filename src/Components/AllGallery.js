@@ -54,6 +54,10 @@ function AllGallery() {
     window.scrollTo({ top: 0});
     // window.scrollTo({ top: 0, behavior: 'smooth' }); //for smooth behavior
   }, []);
+
+  const scrollToTop = (()=>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  })
   
     
   return (
@@ -76,8 +80,8 @@ function AllGallery() {
                 ))}
                 </div>
             ))}
-            
         </div>
+        <button className='toTopBtn backBtn' onClick={scrollToTop}><img src={prev} alt="next" /></button>
     </div>
   )
 }

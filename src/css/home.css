@@ -548,3 +548,15 @@ a{
 .backBtn img{
     width: 20px;
 }
+
+.toTopBtn{
+    bottom: 30px;
+    right: 30px;
+    top: auto;
+    left: auto;
+    position: fixed;
+}
+
+.toTopBtn img{
+    transform: rotate(90deg);
+}
