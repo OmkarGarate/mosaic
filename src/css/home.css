@@ -453,6 +453,29 @@
 .evePhotos{
     /* border: 1px solid black; */
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.evePhotos .geDesc{
+    margin-top: -70px;
+    color: white;
+    margin-left: 40px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.evePhotos:hover .geDesc{
+    margin-top: -80px;
+}
+
+.geDesc h2{
+    font-size: 1.2rem;
+}
+
+.geDesc p{
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 .evePhotos img {
@@ -460,6 +483,16 @@
     height: 100%;
     aspect-ratio: 3/2;
     object-fit: cover;
+}
+
+.grayImg{
+    filter: grayscale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.evePhotos:hover .grayImg{
+    filter: grayscale(0);
+    transform: scale(1.1);
 }
 
 .vag{

@@ -26,7 +26,11 @@ function Gallery() {
 
     const events = [];
       for (var i = 0; i < 8; i++) {
-        events[i] = images[k];
+        events.push({
+            name: "Event" + (i+1),
+            desc: "Organized on " + (i+1)+2 + " June 2023",
+            img : images[k]
+        })
       if(k===7)
       {
           k=0;
@@ -52,7 +56,12 @@ function Gallery() {
                 <div className="rowIndex" key={rowIndex}>
                     {events.map((eve, index)=>(
                     <div className={`evePhotos item${index + 1}`} key={index} >
-                        <img src={eve} alt="" />
+                        {/* <div className="cover"></div> */}
+                        <img src={eve.img} alt="Event Image" className='grayImg'/>
+                        <div className="geDesc">
+                            <h2>{eve.name}</h2>
+                            <p>{eve.desc}</p>
+                        </div>
                     </div>
                 ))}
                 </div>
