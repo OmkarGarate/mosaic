@@ -76,12 +76,15 @@ function LiveEvents() {
         <ul className="me-ev">
           <li>
             <Link to={"/prevEvents"}>Previous Events</Link>
+            <div className="underline"></div>
           </li>
-          <li style={{ borderBottom: "2px solid #ffbd00", fontWeight: "500" }}>
+          <li>
             <Link to={"/"}>Live Events</Link>
+            <div className="underline" style={{width: "100%"}}></div>
           </li>
           <li>
             <Link to={"/upEvents"}>Upcoming Events</Link>
+            <div className="underline"></div>
           </li>
         </ul>
       </div>
