@@ -20,6 +20,7 @@ function Lae() {
         img7,
         img8
     ]
+    
   return (
     <div className='lae'>
         <h4 className='miniTitle'>UPCOMING EVENTS</h4>

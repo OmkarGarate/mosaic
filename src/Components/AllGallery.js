@@ -24,11 +24,15 @@ function AllGallery() {
         img8
     ]
 
-    var k =0;
+    var k=0;
 
     const events = [];
-      for (var i = 0; i < 40; i++) {
-        events[i] = images[k];
+      for (var i = 0; i < 20; i++) {
+        events.push({
+            name: "Event" + (i+1),
+            desc: "Organized on " + (i+1)+2 + " June 2023",
+            img : images[k]
+        })
       if(k===7)
       {
           k=0;
@@ -62,8 +66,13 @@ function AllGallery() {
                 <div className="rowIndex" key={rowIndex}>
                     {events.map((eve, index)=>(
                     <div className={`evePhotos item${index + 1}`} key={index} >
-                        <img src={eve} alt="" />
-                    </div>
+                      {/* <div className="cover"></div> */}
+                      <img src={eve.img} alt="Event Image"/>
+                      <div className="geDesc">
+                          <h2>{eve.name}</h2>
+                          <p>{eve.desc}</p>
+                      </div>
+                </div>
                 ))}
                 </div>
             ))}
