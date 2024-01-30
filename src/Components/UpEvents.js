@@ -75,7 +75,7 @@ function UpEvents() {
           {groupedEvents.map((group, rowIndex) => (
             <div key={rowIndex} className="eventRow">
               {group.map((eve, index) => (
-                <div className="elEve" key={index}>
+                <Link to={"/eventPage"} className="elEve" key={index}>
                   <div className="dni">
                     <img src={eve.img} alt="" />
                     <div className="siDate">
@@ -101,7 +101,7 @@ function UpEvents() {
                     </div>
                     <button>TICKETS & DETAILS</button>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           ))}

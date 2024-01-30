@@ -8,6 +8,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .lae{
     /* border: 1px solid black; */
     display: flex;
@@ -56,11 +60,11 @@
 }
 
 .prev{
-    margin-right: -25px;
+    margin-right: -40px;
 }
 
 .next{
-    margin-left: -25px;
+    margin-left: -40px;
     
 }
 
@@ -81,7 +85,7 @@
 .slideEve{
     width: 25%;
     /* transition: 0.5s ease-in; */
-    margin: 0 10px;
+    margin: 0 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -309,6 +313,7 @@
     justify-content: space-between;
     display: flex;
     position:relative;
+    color: black;
 }
 
 .dni{
@@ -508,6 +513,10 @@
 }
 
 .photoGallery a{
+    text-decoration: none;
+}
+
+.agLink{
     margin-top: 50px;
     border-radius: 50px;
     cursor: pointer;

@@ -55,20 +55,20 @@ function Gallery() {
             {groupedEvents.map((events, rowIndex)=>(
                 <div className="rowIndex" key={rowIndex}>
                     {events.map((eve, index)=>(
-                    <div className={`evePhotos item${index + 1}`} key={index} >
+                    <Link to={"/eventPage"} className={`evePhotos item${index + 1}`} key={index} >
                         {/* <div className="cover"></div> */}
-                        <img src={eve.img} alt="Event Image" className='grayImg'/>
+                        <img src={eve.img} alt="Event" className='grayImg'/>
                         <div className="geDesc">
                             <h2>{eve.name}</h2>
                             <p>{eve.desc}</p>
                         </div>
-                    </div>
+                    </Link>
                 ))}
                 </div>
             ))}
             
         </div>
-        <Link to={"/allGallery"}><button className='vag'>VIEW ALL GALLERY</button></Link>
+        <Link to={"/allGallery"} className='agLink'><button className='vag'>VIEW ALL GALLERY</button></Link>
     </div>
   )
 }

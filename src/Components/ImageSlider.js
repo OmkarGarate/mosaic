@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import prev from "../Images/prev.png";
 import time from '../Images/clock.png'
 import location from '../Images/location.png'
+import { Link } from "react-router-dom";
 
 const ImageSlider = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -31,7 +32,7 @@ const ImageSlider = ({ images }) => {
       </button>
       <div className="slider">
         {displayedImages.map((image, index) => (
-          <div className="slideEve" key={index}>
+          <Link to={"/eventPage"} className="slideEve" key={index}>
             <img src={image} alt={`Slide ${index + 1}`} className="slideImg" />
             <div className="siDate">
                 <div className="sld">20</div><div className="slm">MAY</div>
@@ -51,7 +52,7 @@ const ImageSlider = ({ images }) => {
                 </div>
                 <button className="sltad">TICKETS & DETAILS</button>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <button onClick={nextImage} className="next">

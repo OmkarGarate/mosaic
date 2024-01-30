@@ -1,16 +1,14 @@
-import logo from './logo.svg';
 import './css/home.css';
-import Lae from './Components/Lae';
-import EventListing from './Components/EventListing';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PrevEvents from './Components/PrevEvents';
 import LiveEvents from './Components/LiveEvents';
 import UpEvents from './Components/UpEvents';
-import Gallery from './Components/Gallery';
 import AllGallery from './Components/AllGallery';
 import Home from './Components/Home';
+import EventPage from './Components/EventPage';
 
 function App() {
+  
   return (
     // <>
 
@@ -27,6 +25,7 @@ function App() {
         <Route path="upEvents" element={<UpEvents/>} />
       </Route>
       <Route path="/allGallery" element={<AllGallery/>}/>
+      <Route path="/eventPage" element={<EventPage/>}/>
     </Routes>
     
   </Router>
