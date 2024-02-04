@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import logo from '../Images/logo.png'
 import profileImg from '../Images/profileImg.png'
 import searchIcon from '../Images/searchIcon.png'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
 
@@ -52,9 +53,9 @@ function Navbar() {
             <li>EVENTS</li>
             <li>GALLERY</li>
             <li className='pnsLink'>
-                <div className="pns">
+                <Link className="pns" to={'/profilePage'}>
                     <img src={profileImg} alt="profileImg" />
-                </div>
+                </Link>
                 <div className="pns" onClick={handleSearchBox}>
                     <img src={searchIcon} alt="searchIcon" />
                 </div>

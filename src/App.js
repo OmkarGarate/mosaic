@@ -6,6 +6,9 @@ import UpEvents from './Components/UpEvents';
 import AllGallery from './Components/AllGallery';
 import Home from './Components/Home';
 import EventPage from './Components/EventPage';
+import Profile from './Components/Profile';
+import RegEvents from './Components/RegEvents';
+import LikedEvents from './Components/LikedEvents';
 
 function App() {
   
@@ -26,6 +29,10 @@ function App() {
       </Route>
       <Route path="/allGallery" element={<AllGallery/>}/>
       <Route path="/eventPage" element={<EventPage/>}/>
+      <Route path="/profilePage" element={<Profile/>}>
+        <Route path='/profilePage' element={<RegEvents/>}/>
+        <Route path='likedEve' element={<LikedEvents/>}/>
+      </Route>
     </Routes>
     
   </Router>
