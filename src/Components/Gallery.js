@@ -48,7 +48,7 @@ function Gallery() {
   );
     
   return (
-    <div className='lae photoGallery'>
+    <div className='lae photoGallery' id='gallery'>
         <h4 className='miniTitle'>MOSAIC GALLERY</h4>
         <h1 className='l-head'>Beautiful &  <strong>Unforgettable Times</strong></h1>
         <div className="gallery">

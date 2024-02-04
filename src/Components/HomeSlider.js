@@ -69,10 +69,10 @@ function HomeSlider() {
       <div className="slidermain">
         <div className="sliderbtns">
           <div className="left sldBtn" onClick={left}>
-            <img src={arrow} alt="" />
+            <img src={arrow} alt="arrow" />
           </div>
           <div className="right sldBtn" onClick={right}>
-            <img src={arrow} alt="" />
+            <img src={arrow} alt="arrow" />
           </div>
         </div>
         <div className="sliderwindow">

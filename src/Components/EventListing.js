@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 function EventListing() {
 
   return (
-    <div className='eventListing'>
+    <div className='eventListing' id='events'>
       <div className="elInner">
         <div className="topOr"></div>
         <h4 className='miniTitle'>MOSAIC EVENTS</h4>
