@@ -50,7 +50,7 @@ input, select, textarea{
     display: flex;
     align-items: center;
     gap: 30px;
-    width: 450px;
+    /* width: 450px; */
 }
 
 .navComps li{
@@ -239,6 +239,7 @@ input, select, textarea{
     background-color: #000000;
     display: flex;
     border-radius: 50px;
+    cursor: pointer;
   }
   
   .sldBtn img {
@@ -745,6 +746,7 @@ input, select, textarea{
     object-fit: cover;
 }
 
+
 .grayImg{
     filter: grayscale(1);
     transition: 0.3s ease-in-out;
@@ -776,6 +778,93 @@ input, select, textarea{
     border-radius: 50px;
     cursor: pointer;
 }
+
+/* mosaic experties */
+.mosaicExp{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.ourservice {
+    text-align: center;
+  }
+  .hmexp {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .expertiseMain {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .expertiseBtns {
+    /* border: 1px solid black; */
+    width: 1000px;
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    cursor: pointer;
+    /* border-radius: 10px; */
+  
+  }
+  .expertiseBtns img{
+      width: 50px;
+  }
+  .expertiseWindow {
+      /* border: 1px solid black; */
+      width: 810px;
+      height: 400px;
+      margin: auto;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+  
+  }
+  .expertiseAllImgs {
+      /* border: 1px solid black; */
+      display: flex;
+      flex-direction: row;
+      height: 300px;
+      width: 1620px;
+      align-items: center;
+      transition: 0.3s ease-in;
+  
+  }
+  .one {
+    /* border: 1px solid black; */
+    width: 250px;
+    height: 300px;
+    margin: 0 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .one img{
+      height: 100%;
+      width: 100%;
+      /* position: relative; */
+  }
+  .smallbox{
+      /* border: 1px solid black; */
+      height: 75px;
+      width: 120px;
+      position: absolute;
+      justify-content: center;
+      bottom: -20px;
+      background-color: white;
+  }
+  .smallbox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    box-shadow: 0px 2px 10px 0px gray;
+  }
 
 .backBtn{
     position: absolute;
@@ -816,3 +905,178 @@ input, select, textarea{
 .toTopBtn img{
     transform: rotate(90deg);
 }
+
+/* Footer css */
+
+/* Global Classes */
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  span{
+    font-family: var(--Abel);
+  }
+  .container{
+    margin: 0 5rem;
+  }
+  
+
+/* Footer */
+footer.footer{
+    height: 100%;
+    background: #0f0f0f;
+    position: relative;
+    margin-top: 1rem;
+  }
+  footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 1fr 1fr 1fr 1fr */  /*25% 25% 25% 25% */
+  }
+  
+  footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+    color: white;
+  }
+  footer.footer .container h1{
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .connect-icons-1{
+    /* border: 1px solid white; */
+    margin: 20px 0;
+  }
+
+  footer.footer .container div .connect-icons-1 i{
+    color:#ffbd00;
+   /* margin-bottom: .5rem; */
+   font-size: 1rem;
+   /* border: 1px solid white; */
+   display: flex;
+   align-items: center;
+  }
+
+  .connect-icons-1 i img{
+    width: 15px;
+  }
+
+  footer.footer .container div .connect-icons-1 i span{
+    font-size: .9rem;
+    padding-left: .4rem;
+  }
+
+  footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+  }
+  footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+  }
+  footer.footer .newsletter .form-element span{
+    background: linear-gradient(100deg, rgb(255, 165, 0) 4%, #cde1ea 100%);
+    padding: .5rem 1rem;
+    cursor: pointer;
+  }
+  footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+  }
+
+  footer.footer .follow div{
+    margin: 1rem;
+  }
+  footer.footer .follow div i{
+    color: #ffffff;
+    padding: 0 .4rem;
+   
+  }
+  footer.footer .follow div i:hover{
+    color: orange;
+    cursor: pointer;
+  }
+  footer.footer .copy-rights{
+    justify-content: center;
+    padding: 20px .4rem;
+  }
+  footer.footer .copy-rights h4{
+    color: #ffffff;
+  }
+  footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+  }
+  footer.footer .move-up span{
+    color: orange;
+  }
+  footer.footer .move-up span:hover{
+    color: white;
+    cursor: pointer;
+  }
+
+  .connect-icons{
+    display: flex;
+    gap: 10px;
+  }
+  .connect-icons img{
+    width: 25px;
+    aspect-ratio: 1/1;
+    /* object-fit: cover; */
+    cursor: pointer;
+  }
+  /* Footer Ends*/
+
+
+  /* Viewport less tham or equal to 1230px */
+@media only screen and (max-width: 1230px){
+    footer.footer .container{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  /* Viewport less tham or equal to 1230px */
+  
+  /* Viewport less tham or equal to 768px */
+  @media only screen and (max-width: 768px) {
+    footer.footer .container{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  /* Viewport less tham or equal to 768px */
+  
+  /* Viewport less tham or equal to 560px */
+  @media only screen and (max-width: 560px){
+    footer.footer .container > div{
+      padding: 1rem .9rem !important;
+    }
+    .container{
+      margin: 0rem 1rem;
+    }
+  }
+  /* Viewport less tham or equal to 560px */
+  
+  /* Viewport less tham or equal to 425px */
+  @media only screen and (max-width: 425px){
+  p{
+    font-size: .8rem !important;
+  }
+  footer.footer .copy-rights h4 {
+    text-align: center !important;
+  }
+  footer.footer .container div .connect-icons-1 i span{
+    font-size: .7rem;
+    padding-left: .4rem;
+  }
+  }
+  
+  /* Viewport less tham or equal to 425px */

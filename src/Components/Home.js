@@ -5,6 +5,8 @@ import Gallery from './Gallery'
 import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 import HomeSlider from './HomeSlider';
+import Footer from './Footer';
+import Mosaicexpertise from './Mosaicexpertise';
 
 function Home() {
   return (
@@ -14,6 +16,8 @@ function Home() {
         <Lae/>
         <EventListing/>
         <Gallery/>
+        <Mosaicexpertise/>
+        <Footer/>
     </div>
   )
 }
