@@ -7,12 +7,14 @@ import Navbar from './Navbar';
 import HomeSlider from './HomeSlider';
 import Footer from './Footer';
 import Mosaicexpertise from './Mosaicexpertise';
+import About from './About';
 
 function Home() {
   return (
     <div>
         <Navbar/>
         <HomeSlider/>
+        <About/>
         <Lae/>
         <EventListing/>
         <Gallery/>

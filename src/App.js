@@ -9,6 +9,7 @@ import EventPage from './Components/EventPage';
 import Profile from './Components/Profile';
 import RegEvents from './Components/RegEvents';
 import LikedEvents from './Components/LikedEvents';
+import AboutMain from './Components/AboutMain';
 
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
         <Route path="upEvents" element={<UpEvents/>} />
       </Route>
       <Route path="/allGallery" element={<AllGallery/>}/>
+      <Route path="/aboutMosaic" element={<AboutMain/>}/>
       <Route path="/eventPage" element={<EventPage/>}/>
       <Route path="/profilePage" element={<Profile/>}>
         <Route path='/profilePage' element={<RegEvents/>}/>
