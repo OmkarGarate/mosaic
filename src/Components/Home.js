@@ -14,8 +14,8 @@ function Home() {
     <div>
         <Navbar/>
         <HomeSlider/>
-        <Lae/>
         <About/>
+        <Lae/>
         <EventListing/>
         <Gallery/>
         <Mosaicexpertise/>

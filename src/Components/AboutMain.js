@@ -1,19 +1,20 @@
 import React from 'react'
-import friendly_color from "../Images/friendly_color.png";
-import venue_color from "../Images/venue_color.png";
-import scenario_color from "../Images/scenario_color.png";
-import time_color from "../Images/time_color.png";
-import phone_color from "../Images/phone_color.png";
-import idea_color from "../Images/idea_color.png";
-import friendly_normal from "../Images/friendly_normal.png";
-import venue_normal from "../Images/venue_normal.png";
-import scenario_normal from "../Images/scenario_normal.png";
-import time_normal from "../Images/time_normal.png";
-import phone_normal from "../Images/phone_normal.png";
-import idea_normal from "../Images/idea_normal.png";
-import prev from "../Images/prev.png";
+import friendly_color from "../Images/Images2/Images/friendly_color.png";
+import venue_color from "../Images/Images2/Images/venue_color.png";
+import scenario_color from "../Images/Images2/Images/scenario_color.png";
+import time_color from "../Images/Images2/Images/time_color.png";
+import phone_color from "../Images/Images2/Images/phone_color.png";
+import idea_color from "../Images/Images2/Images/idea_color.png";
+import friendly_normal from "../Images/Images2/Images/friendly_normal.png";
+import venue_normal from "../Images/Images2/Images/venue_normal.png";
+import scenario_normal from "../Images/Images2/Images/scenario_normal.png";
+import time_normal from "../Images/Images2/Images/time_normal.png";
+import phone_normal from "../Images/Images2/Images/phone_normal.png";
+import idea_normal from "../Images/Images2/Images/idea_normal.png";
+import prev from "../Images/Images2/Images/prev.png";
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import '../css/about.css'
 
 function AboutMain() {
   
