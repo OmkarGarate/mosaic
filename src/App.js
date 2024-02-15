@@ -1,3 +1,4 @@
+import React from 'react';
 import './css/home.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PrevEvents from './Components/PrevEvents';
@@ -10,18 +11,16 @@ import Profile from './Components/Profile';
 import RegEvents from './Components/RegEvents';
 import LikedEvents from './Components/LikedEvents';
 import AboutMain from './Components/AboutMain';
+import CollegeListing from './Components/CollegeListing';
+import AllColleges from './Components/AllColleges';
+
+
+
 
 function App() {
   
   return (
-    // <>
-
-    // <Lae/>
-    // <EventListing/>
-    // </>
     <Router>
-
-
     <Routes>
       <Route path="/" element={<Home/>}>
         <Route path="prevEvents" element={<PrevEvents/>} />
@@ -35,6 +34,9 @@ function App() {
         <Route path='/profilePage' element={<RegEvents/>}/>
         <Route path='likedEve' element={<LikedEvents/>}/>
       </Route>
+      <Route exact path="/" element={CollegeListing} />
+      <Route exact path="/all-Colleges" element={ <AllColleges />} />
+  
     </Routes>
     
   </Router>
@@ -42,3 +44,4 @@ function App() {
 }
 
 export default App;
+
