@@ -1,14 +1,28 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../css/eventPage.css'
 import eveImg from '../Images/Music-Festival-Poster-Design-1.jpg'
-import prev from "../Images/prev.png";  
-import { Link } from 'react-router-dom'
+import prev from "../Images/prev.png"; 
+import { Link } from 'react-router-dom';
+import Sharebtn from './Sharebtn';
+import like from "../Images/like.png" 
+import liked from "../Images/liked.png" 
 
 function EventPage() {
+   // State to track whether the like button is clicked
+   const [isLiked, setIsLiked] = useState(false);
+
+   // Function to toggle the like button state
+   const handleLikeClick = () => {
+     setIsLiked(!isLiked);
+   };
+
   return (
     <>
       <Link to={"/"}><button className='backBtn'><img src={prev} alt="next" /></button></Link>
     <div className="box">
+      <div className="shareBtn">
+    <Sharebtn title="Check out this event!" url={window.location.href}/>
+    </div>
     <div className="poster">
       <img src={eveImg} alt="Poster"/>
     </div>
@@ -29,6 +43,11 @@ function EventPage() {
             
      </div>
 </div>
+<button className={`like-button ${isLiked ? 'liked' : ''}`} onClick={handleLikeClick}>
+        <img src={isLiked ? liked : like} alt='like'></img>
+      </button>
+
+
     </div>
     </>
   )

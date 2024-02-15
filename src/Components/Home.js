@@ -8,6 +8,7 @@ import HomeSlider from './HomeSlider';
 import Footer from './Footer';
 import Mosaicexpertise from './Mosaicexpertise';
 import About from './About';
+import CollegeListing from './CollegeListing';
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
         <EventListing/>
         <Gallery/>
         <Mosaicexpertise/>
+        <CollegeListing/>
         <Footer/>
     </div>
   )

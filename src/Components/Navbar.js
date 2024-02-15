@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../Images/logo.png'
+import logo1 from '../Images/logo1.png'
 import profileImg from '../Images/profileImg.png'
 import searchIcon from '../Images/searchIcon.png'
 import { Link } from 'react-router-dom'
@@ -47,7 +47,7 @@ function Navbar() {
   return (
     <div className="navbarMain">
         <div className='navbar'>
-        <img src={logo} alt="logo" className='logo'/>
+        <img src={logo1} alt="logo1"className='logo'/>
         <ul className='navComps'>
             <li style={{color: "#ff3600"}}>HOME</li>
             <ScrollLink to='about' smooth={true} duration={500}><li>ABOUT US</li></ScrollLink>
