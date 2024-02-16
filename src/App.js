@@ -15,6 +15,7 @@ import CollegeListing from './Components/CollegeListing';
 import AllColleges from './Components/AllColleges';
 import Signin from './Components/Signin';
 import Signup from './Components/Signup';
+import SRM from './Components/SRM';
 
 
 
@@ -32,8 +33,7 @@ function App() {
       <Route path="/allGallery" element={<AllGallery/>}/>
       <Route path="/aboutMosaic" element={<AboutMain/>}/>
       <Route path="/eventPage" element={<EventPage/>}/>
-      <Route path="/signin" element={<Signin/>}/>
-      <Route path="/signup" element={<Signup/>}/>
+      <Route path="/srm" element={<SRM/>}/>
       <Route path="/profilePage" element={<Profile/>}>
         <Route path='/profilePage' element={<RegEvents/>}/>
         <Route path='likedEve' element={<LikedEvents/>}/>
