@@ -67,14 +67,14 @@
     position: absolute;
     /* border: 1px solid purple; */
     /* top: 120px; */
-    width: 62%;
+    width: 68%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     border-radius: 4%;
-    height: 33vh;
+    height: 60%;
     padding: 60px 20px;
     background-color: rgb(255 255 255 / 8%);
     -webkit-backdrop-filter: blur(10px);
